@@ -2,6 +2,7 @@
 @import "markdown.scss";
 @import "syntax.scss";
 @import "toc.scss";
+@import "sketch.scss";
 
 :root {
   --pm: #0fa0ce;
@@ -66,7 +67,7 @@ code {
   font-size: 13px;
 }
 
-.minima-tag,
+.tag,
 p code {
   background-color: var(--bd);
   padding: 0.2em 0.4em;
@@ -83,7 +84,7 @@ a:hover {
 }
 
 main {
-  animation: showup 0.7s;
+  animation: showup 0.0s;
 }
 
 p a {
