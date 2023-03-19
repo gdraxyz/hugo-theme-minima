@@ -15,10 +15,10 @@
   </title>
   {{ $favicon := "favicon.ico" }}
   <link rel="shortcut icon" href="{{ $favicon | relURL }}" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet">  -->
   {{ $hash := now.Unix }}
   {{ $options := (dict "targetPath" (printf `minima.%d.css` $hash) "outputStyle" "compressed" "enableSourceMap" true) }}
   {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
